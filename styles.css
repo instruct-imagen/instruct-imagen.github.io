@@ -198,6 +198,10 @@ div.abstract div.inside p.text {
   text-align: justify;
 }
 
+div.abstract div.inside h2 {
+  font-size: 1.5em;
+}
+
 div.limitations {
   background-color: rgb(26, 26, 26);
   /* background-color: rgb(245, 245, 245); */
@@ -398,6 +402,10 @@ a.read-paper button:hover {
     background-color: rgb(64, 64, 64);
     font-size: 1em;
     padding: 25px;
+  }
+
+  div.abstract div.inside h2 {
+    font-size: 1em;
   }
 
   div.abstract div.inside {
