@@ -210,31 +210,6 @@ div.limitations div.inside p.text {
   text-align: justify;
 }
 
-div.note {
-  /*  background-color: rgb(26, 26, 26);*/
-  background-color: rgb(245, 245, 245); 
-/*  color: rgb(255, 255, 255);*/
-}
-
-div.note div.inside {
-  padding: 0;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: justify;
-}
-
-div.note div.inside h2 {
-  font-size: 1.75em;
-  text-align: center;
-}
-
-div.note div.inside p.text {
-  padding: 0 0 25px 0;
-  margin: 0;
-  font-size: 1.3em;
-  text-align: justify;
-}
-
 
 a.read-paper button:hover {
   background-color: rgb(26, 26, 26);
