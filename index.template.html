@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- anon-on -->
+    <meta name="twitter:site" content="@GoogleAI" />
+    <!-- anon-off -->
+    <meta name="twitter:title" content="{{ twitter_title }}" />
+    <meta name="twitter:description" content="{{ twitter_desc }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <script src="jquery.min.js"></script>
+    <script src="jquery.flip.min.js"></script>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SMWK19DNCN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SMWK19DNCN');
+    </script>
+
+    <title>{{ website_title }}</title>
+  </head>
+  <body>
+    <div id="gallery0" style="padding-top: 50px; padding-bottom: 20px; background-color: rgb(245,245,245);"> 
+
+      <h2 style="text-align: center;">{{ paper_title }}</h2>
+
+      <!-- anon-on -->
+      <div class="authors text-center">
+        <div class="row">
+          <div class="col">
+            <a href="https://www.hexianghu.com/">Hexiang Hu</a><sup>&#x2B25;*</sup>
+          </div>
+          <div class="col">
+            <a href="https://ckkelvinchan.github.io/">Kelvin C.K. Chan</a><sup>&#x2B26;*</sup>
+          </div>
+          <div class="col">
+            <a href="https://sammy-su.github.io/">Yu-Chuan Su</a><sup>&#x2B26;*</sup>
+          </div>
+          <div class="col">
+            <a href="https://wenhuchen.github.io/">Wenhu Chen</a><sup>&#x2B25;*</sup>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a href="https://cold-winter.github.io/">Yandong Li</a><sup>&#x2B26;</sup>
+          </div>
+          <div class="col">
+            <a href="https://sites.google.com/site/kihyuksml/">Kihyuk Sohn</a><sup>&#x2B26;</sup>
+          </div>
+          <div class="col">
+            <a href="https://sites.google.com/corp/view/zhao-yang/">Yang Zhao</a><sup>&#x2B26;</sup>
+          </div>
+          <div class="col">
+            <a href="https://scholar.google.com/citations?user=PZozDjoAAAAJ&hl=en">Xue Ben</a><sup>&#x2B26;</sup>
+          </div>
+          <div class="col">
+            <a href="http://boqinggong.info/">Boqing Gong</a><sup>&#x2B26;</sup>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a href="http://www.cs.cmu.edu/~wcohen/">William W. Cohen</a><sup>&#x2B25;</sup>
+          </div>
+          <div class="col">
+            <a href="https://mingweichang.org/">Ming-Wei Chang</a><sup>&#x2B25;</sup>
+          </div>
+          <div class="col">
+            <a href="https://scholar.google.com/citations?user=vO0VSSYAAAAJ&hl=en">Xuhui Jia</a><sup>&#x2B26;</sup>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <div class="col text-small">(*: Authors contributed equally)</div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <span>&#x2B25;&nbsp;:&nbsp;</span>&nbsp;&nbsp;<img src="assets/gdm-logo.svg" alt="Google Deepmind" height=35>
+          </div>
+          <div class="col">
+            <span>&#x2B26;&nbsp;:&nbsp;</span>&nbsp;&nbsp;<img src="https://brand.gatech.edu/sites/default/files/inline-images/extended-RGB.png" alt="Georgia Tech" height=45>
+          </div>
+        </div>
+        <div class="row nomobile">
+          <center><a href="{{ paper_url }}" target="_blank"><img class="thumbnail" src="assets/paper_thumbnail.png"></a></center>
+        </div>
+      </div>
+      <!-- anon-off -->
+    </div>
+
+<!--     <div class="header_dark_gray text-center">
+      <h2>SuTI is an <i>in-context</i> subject-driven text-to-image generator that draws subject-specific images <i>without fine-tuning</i></h2>
+    </div>
+    <div class="abstract">
+      <div class="inside">
+        <p class="text">
+        {{ paper_abstract }}
+        </p>
+        <!-- anon-on -->
+        <a class="read-paper" href="{{ paper_url }}" target="_blank"><button>Research Paper</button></a>
+        <!-- anon-off -->
+      </div>
+    </div>
+
+    <div class="header_dark_gray text-center">
+      <h2>Zero-shot subjec-specific generations on the DreamBench-v2</h2>
+      <h8>Given a few demonstrations from the users, SuTI is able to generate subject-specific images instantly (~ 20-30 seconds on TPUv4), and without fine-tuning</h8>
+    </div>
+    <div class="image_8" id="gallery1">
+      <div class="flipcard" id="fig0">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig1">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img />
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig2">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig3">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig4">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig5">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig6">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig7">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption class="subject_title"><span style="color: #c994c7">Subject Images</span>:</figcaption>
+            <div class="subject"></div>
+            <figcaption class="description"></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="header_dark_gray text-center">
+      <h2>SuTI behaves adaptively as the # of in-context examples increases</h2>
+      <h8>When # of in-context examples = 0, SuTI generates its text-only prior;</h8> <br/>
+      <h8>When # of in-context examples = 1, SuTI behaves similar to image editing model;</h8> <br/>
+      <h8>When # of in-context examples > 1, SuTI generates novel poses/views of the subject.</h8>
+    </div>
+    <div class="row mt-4 mb-4">
+      <img src="assets/kshot_study.jpg" class="figure_image">
+    </div>
+
+    <div class="header_dark_gray text-center">
+      <h2>SuTI not only re-contextualizes subject images but can <i>compose multiple transformations</i> together</h2>
+    </div>
+    <div class="row mt-4 mb-4">
+      <img src="assets/compose_transformation.jpg" class="figure_image">
+    </div>
+
+    <div class="header_dark_gray text-center">
+      <h2>SuTI has a set of diverse skills in generating high-quality subject-specific images</h2>
+      <h8>In addition to re-contextualize, SuTI can accessorize, stylize, colorize and synthesize novel view for subject-specific images</h8>
+    </div>
+    <div class="row mt-2 mb-2">
+      <img src="assets/accessory.jpg" class="figure_image">
+    </div>
+    <div class="row mt-2 mb-2">
+      <img src="assets/style.jpg" class="figure_image">
+    </div>
+    <div class="row mt-2 mb-2">
+      <img src="assets/color.jpg" class="figure_image">
+    </div>
+    <div class="row mt-2 mb-2">
+      <img src="assets/multiview.jpg" class="figure_image">
+    </div>
+
+    <div class="header_dark_gray text-center">
+      <h2>Failure modes of the SuTI</h2>
+      <h8>SuTI often fails when subject appearance deviates too much from its prior, or when the text depicts rare visual scene</h8>
+    </div>
+    <div class="row mt-4 mb-4">
+      <img src="assets/failure.png" class="figure_image">
+    </div>
+ -->
+<!-- anon-on -->
+<div class="header_dark_gray text-center">
+  <h2>Cite us using the following BibTex</h2>
+</div>
+<div class="abstract">
+  <div class="inside">
+    <pre>
+      <code>
+      @article{hu2024instruct,
+        title={Instruct-Imagen: Image Generation with Multi-modal Instruction}, 
+        author={Hu, Hexiang and Chan, Kelvin and Su, Yu-Chuan and Chen, Wenhu 
+                and Li, Yandong and Yang, Zhao and Ben, Xue and Gong, Boqing 
+                and Cohen, William W and Chang, Ming-Wei and Jia, Xuhui},
+        journal={arXiv preprint arXiv:240x.xxxx},
+        year={2024},
+      }
+      </code>
+    </pre>
+  </div>
+</div>
+
+<div class="content text-center">
+  <h2>Border Impact</h2>
+  <p class="smaller" style="text-align: justify;">{{ border_impact }}</p>
+</div>
+
+
+<!-- anon-off -->
+
+<script type="text/javascript">
+
+  gallery_images = [
+  {% for item in gallery %}
+  {
+    "src": "{{ item.src }}",
+    "description": "<span style='color: #dd1c77'>Text</span>: {{ item.description }}",
+    "subjects": "<img class='subject_image' src='{{ item.src[:-5] }}/gt1.jpg'/> <img class='subject_image' src='{{ item.src[:-5] }}/gt2.jpg'/> <img class='subject_image' src='{{ item.src[:-5] }}/gt3.jpg'/> <img class='subject_image' src='{{ item.src[:-5] }}/gt4.jpg'/>"
+  },
+  {% endfor %}
+  ];
+
+  lastCardFlippedIdx = {
+    gallery1: -1,
+  };
+
+  lastCardFlippedLastSwapTime = {
+    gallery1: -1,
+  };
+
+  $(".flipcard").flip({
+    trigger: "manual",
+    reverse: false,
+  });
+
+  function checkIfImageIsVisible(name, image) {
+    numCards = $(name + " .flipcard:visible").size();
+
+    for (var cardIdx = 0; cardIdx < numCards; ++cardIdx) {
+      var isFlipped = $(name + " #fig" + cardIdx).data("flip-model").isFlipped;
+      if (!isFlipped) {
+        src = $(name + " #fig" + cardIdx + " div.front figure img").attr("src")
+      } else {
+        src = $(name + " #fig" + cardIdx + " div.back figure img").attr("src")
+      }
+
+      if (image.src == src) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function getNextImage(name) {
+    // different galleries have different sources of imagery.
+    img_src = gallery_images;
+    while (true) {
+      randomImageIdx = Math.floor(Math.random() * img_src.length);
+      if (!checkIfImageIsVisible(name, img_src[randomImageIdx])) {
+        return img_src[randomImageIdx];
+      }
+    }
+  }
+
+  function randomSwapImageWithId(name, randomCardIdx) {
+    numCards = $(name + " .flipcard:visible").size();
+
+    image = getNextImage(name);
+
+    const d = new Date();
+    let currentTime = d.getTime();
+    lastCardFlippedIdx[name] = randomCardIdx;
+    lastCardFlippedLastSwapTime[name] = currentTime;
+
+    var isFlipped = $(name + " #fig" + randomCardIdx).data("flip-model").isFlipped;
+    if (!isFlipped) {
+      $(name + " #fig" + randomCardIdx + " div.back figure img").attr("src", image.src)
+      $(name + " #fig" + randomCardIdx + " div.back figure figcaption.description").html(image.description)
+      $(name + " #fig" + randomCardIdx + " div.back figure div.subject").html(image.subjects)
+    } else {
+      $(name + " #fig" + randomCardIdx + " div.front figure img").attr("src", image.src)
+      $(name + " #fig" + randomCardIdx + " div.front figure figcaption.description").html(image.description)
+      $(name + " #fig" + randomCardIdx + " div.front figure div.subject").html(image.subjects)
+    }
+
+    $(name + " #fig" + randomCardIdx).flip("toggle");
+  }
+
+  function randomSwapImage(name) {
+    numCards = $(name + " .flipcard:visible").size();
+
+    const d = new Date();
+    if (d.getTime() - lastCardFlippedIdx[name] < 5000) {
+      setTimeout(randomSwapImage, 1000, name);
+      return;
+    }
+
+    do {
+      randomCardIdx = Math.floor(Math.random() * numCards);
+      if (numCards == 1) {
+        break;
+      }
+    } while (randomCardIdx == lastCardFlippedIdx[name]);
+
+    randomSwapImageWithId(name, randomCardIdx);
+    setTimeout(randomSwapImage, 3000, name);
+  }
+
+  function setupGallery1(id) {
+        randomSwapImageWithId("#gallery1", id);
+        $("#gallery1 #fig" + id).click(
+          function() {
+            randomSwapImageWithId("#gallery1", id);
+          }
+        );
+  }
+  for (id = 0; id < 8; id ++) {
+        setupGallery1(id);
+  }
+
+  setTimeout(randomSwapImage, 1000, "#gallery1");
+</script>
+<script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>
