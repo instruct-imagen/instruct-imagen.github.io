@@ -117,12 +117,10 @@
 
 
     <!-- anon-on -->
-    <div class="header_dark_gray text-center">
-      <h2>Cite us using the following BibTex</h2>
-    </div>
-    <div class="abstract">
+    <div class="abstract header_dark_gray">
       <div class="inside">
         <pre>
+          <p>Cite us using the following BibTex:</p>
           <code>
           @article{hu2024instruct,
             title={Instruct-Imagen: Image Generation with Multi-modal Instruction}, 
@@ -137,11 +135,19 @@
       </div>
     </div>
 
-    <div class="content text-center">
-      <h2>Border Impact</h2>
-      <p class="smaller" style="text-align: justify;">{{ border_impact }}</p>
+    <div class="note text-center mt-5">
+      <div class="inside">
+        <h2>Border Impact</h2>
+        <p class="text">{{ border_impact }}</p>
+      </div>
     </div>
 
+    <div class="note header_dark_gray text-center">
+      <div class="inside">
+        <h2>Special Thanks</h2>
+        <p class="text">{{ acknowledgement }}</p>
+      </div>
+    </div>
 
     <!-- anon-off -->
 
