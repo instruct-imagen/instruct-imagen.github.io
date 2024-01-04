@@ -1,0 +1,9 @@
+<svg width="192px" height="192px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>instruct-imagen</title>
+    <g id="192x192" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(48, 17)" fill="#00C5E8">
+            <polygon id="Rectangle" points="21.75 84.8009709 69.75 84.8009709 96 157.5 0 157.5"></polygon>
+            <polygon id="Rectangle" transform="translate(48, 36.3495) scale(1, -1) translate(-48, -36.3495)" points="21.75 4.04224067e-13 69.75 1.86445034e-13 96 72.6990291 0 72.6990291"></polygon>
+        </g>
+    </g>
+</svg>
