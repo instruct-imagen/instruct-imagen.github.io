@@ -117,7 +117,8 @@
     </div>
 
     <div class="header_dark_gray text-center">
-      <h2>Instruct-Imagen extends a pre-trained text-to-image imagen model with two-stage training</h2>
+      <h2>Instruct-Imagen extends a pre-trained text-to-image imagen model with two-stage fine-tuning</h2>
+      <h6>With a small number of additional parameters (10%), Instruct-Imagen can be trained to understand multi-modal instructions, without any descriminative training.</h6>
     </div>
     <div class="row mt-4 mb-4">
       <img src="assets/how2train.png" class="figure_image">
@@ -125,6 +126,7 @@
 
     <div class="header_dark_gray text-center">
       <h2>Instruct-Imagen exceeds in generating various in-domain tasks</h2>
+      <h6>Unlike some SoTA methods such as DreamBooth or StyleDrop, instruct-imagen do not require any test-time fine-tuning and can inference on the fly (~18.2 sec per second!)</h6>
     </div>
     <div class="row mt-4 mb-4">
       <img src="assets/indomain.png" class="figure_image">
@@ -132,6 +134,7 @@
 
     <div class="header_dark_gray text-center">
       <h2>More importantly, Instruct-Imagen zero-shot generalizes to compositional and <strong>more complex</strong> tasks</h2>
+      <h6>Without training on any data from the tasks below, instruct-imagen can produce very reasonable images w.r.t the complex multi-modal instruction.</h6>
     </div>
     <div class="row mt-4 mb-2">
       <img src="assets/zeroshot1.png" class="figure_image">
